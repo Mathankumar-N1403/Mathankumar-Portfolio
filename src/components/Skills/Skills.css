@@ -1,0 +1,99 @@
+/* ===== SECTION ===== */
+.skills {
+  background: var(--bg);
+  padding: 70px 0;
+}
+
+/* ===== HEADER ===== */
+.skills-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.tech-wrapper {
+  padding: 20px 10px;
+}
+
+.skills {
+  padding: 50px 20px;
+}
+.section-label {
+  font-size: 14px;
+  color: brown;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-top:15px;
+
+  margin-bottom: 10px;
+}
+
+.section-desc {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ===== WRAPPER ===== */
+.tech-wrapper {
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+/* ===== GRID FIX (IMPORTANT) ===== */
+.tech-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+  max-width: 750px;
+  margin: auto;
+}
+
+/* ===== CARD ===== */
+.tech-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 15px 10px;
+  text-align: center;
+  border: 1px solid #eee;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== ICON ===== */
+.tech-icon {
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+/* ===== TEXT ===== */
+.tech-card p {
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .tech-container {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 15px;
+  }
+
+  .tech-icon {
+    font-size: 28px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+}

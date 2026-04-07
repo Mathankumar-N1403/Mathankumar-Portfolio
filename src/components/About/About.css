@@ -1,0 +1,233 @@
+.about {
+  background: var(--bg-card);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 80px 20px;
+}
+
+/* CONTAINER */
+.about-container {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* TEXT */
+.about-text {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.85;
+  margin-bottom: 30px;
+}
+
+/* EDUCATION */
+.education-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+ 
+}
+
+.edu-card {
+  flex: 1 1 250px;     /* ✅ responsive base */
+  max-width: 520px;    /* ✅ control width */
+  padding: 20px 22px;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--border);
+  background: var(--bg);
+  transition: var(--transition);
+}
+
+.edu-card.accent {
+  border-color: var(--accent-border);
+  background: var(--accent-soft);
+}
+
+.edu-card:hover {
+  transform: translateX(4px);
+  box-shadow: var(--shadow-sm);
+}
+
+.edu-year {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.edu-degree {
+  font-size: 0.975rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: 6px;
+}
+
+.edu-school {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-top: 3px;
+}
+
+/* RIGHT CARD */
+.about-card {
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  padding: 36px 32px 0;
+}
+
+/* AVATAR */
+.about-avatar {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 30px;
+}
+
+.avatar-initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent) 0%, #E8822A 100%);
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.avatar-ring {
+  position: absolute;
+  inset: -5px;
+  border-radius: 50%;
+  border: 2px dashed var(--accent-border);
+  animation: spin 12s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* DETAILS */
+.about-details {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.detail-row {
+  display: flex;
+  gap: 12px;
+}
+
+.detail-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  background: var(--accent-soft);
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.detail-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.detail-value {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  word-break: break-word; /* ✅ mobile fix */
+}
+
+/* STATS */
+.about-stat-row {
+  display: flex;
+  align-items: center;
+  border-top: 1.5px solid var(--border);
+  margin: 0 -32px;
+}
+
+.stat-box {
+  flex: 1;
+  padding: 20px 16px;
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.stat-label {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+}
+
+.stat-divider {
+  width: 1px;
+  height: 40px;
+  background: var(--border);
+}
+
+/* ========================= */
+/* 🔥 RESPONSIVE BREAKPOINTS */
+/* ========================= */
+
+/* ✅ Tablet */
+@media (max-width: 900px) {
+  .about-container {
+    grid-template-columns: 1fr; /* stack */
+    gap: 40px;
+  }
+
+  .education-cards {
+    justify-content: center;
+  }
+}
+
+/* ✅ Mobile */
+@media (max-width: 600px) {
+  .about {
+    padding: 40px 15px;
+  }
+
+  .about-card {
+    padding: 25px 20px 0;
+  }
+
+  .edu-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+  }
+
+  .about-avatar {
+    width: 75px;
+    height: 75px;
+  }
+
+  .avatar-initials {
+    width: 75px;
+    height: 75px;
+    font-size: 1.4rem;
+  }
+}
