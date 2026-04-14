@@ -42,8 +42,8 @@ const Hero = () => {
             <a href="#projects" className="btn-primary">
               View My Work <FiArrowRight />
             </a>
-         <a
-  href="/Mathankumar-cv-1.pdf"
+        <a
+  href="https://drive.google.com/uc?export=download&id=1u_1fyvrduZ8zGPR9yY36WBeTQTvXl94M"
   target="_blank"
   rel="noopener noreferrer"
   className="btn-secondary"
