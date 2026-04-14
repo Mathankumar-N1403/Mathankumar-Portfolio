@@ -77,7 +77,9 @@ const About = () => {
             </div>
           </div>
         </div>
-          <p className="section-label" style={{fontSize:"18px",color:"brown",marginTop:"-70px"}}>Education</p>
+        <p className="section-label education-title">
+  Education
+</p>
 
       </div>
           <div className="education-cards" >

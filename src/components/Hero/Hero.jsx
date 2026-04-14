@@ -42,9 +42,10 @@ const Hero = () => {
             <a href="#projects" className="btn-primary">
               View My Work <FiArrowRight />
             </a>
-           <a
+         <a
   href="/Mathankumar-cv-1.pdf"
-  download
+  target="_blank"
+  rel="noopener noreferrer"
   className="btn-secondary"
 >
   <FiDownload />
